@@ -46,6 +46,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
+ source /Users/ansh/Desktop/e-com/.venv/bin/activate
 *.py,cover
 .hypothesis/
 .pytest_cache/
@@ -156,7 +157,7 @@ cython_debug/
 .DS_Store
 
 # Data / models / indexes
-
+BigBasket Products.csv
 ecom_assistant/data/
 *.pt
 *.index
@@ -173,3 +174,7 @@ UniMIND/saved_model/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+*.csv
+
+

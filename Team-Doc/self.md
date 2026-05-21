@@ -71,23 +71,6 @@ YOUR_OPENAI_KEYj-...
 grok api-
 gsk\_...
 
-# Run
-
-http://localhost:7860
-
-export GROQ*API_KEY="gsk*..."
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-export TOKENIZERS_PARALLELISM=false
-export OMP_NUM_THREADS=1
-export MKL_NUM_THREADS=1
-source /Users/aryandubeytopg/Downloads/e-com/.venv/bin/activate
-cd /Users/aryandubeytopg/Downloads/e-com/ecom_assistant
-python3 app.py
-
-cd /Users/aryandubeytopg/Downloads/e-com/ecom*assistant
-export GROQ_API_KEY="gsk*..."
-python3 app.py
-
 # Logs 26-02
 
 - No product name is provided, only brand
@@ -103,4 +86,14 @@ python3 app.py
 - At least 25 words synthetic data for richer description for every product
 - data should be smart: apple smartphone have lightning/usb c charging 5g, vivo phones some still have 4g type c charging, some have 5g type c gaming phone. Apple laptops are office work not gaming magsafe charging. Asus laptops are gaming laptops some having 16gb RAM 512gb sdd harddisk....etc
 
-# Understanding
+# Run
+
+http://localhost:7860
+
+GROQ_API_KEY=your_api_key
+
+cd /Users/ansh/Desktop/e-com
+pip install flask faiss-cpu sentence-transformers groq
+source .venv/bin/activate
+export GROQ_API_KEY=your_api_key
+python3 ecom_assistant/app.py
