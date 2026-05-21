@@ -155,13 +155,9 @@ cython_debug/
 # macOS
 .DS_Store
 
-# Data / models / indexes
-
-ecom_assistant/data/
-*.pt
-*.index
+# Data / models / indexes (tracked via Git LFS)
+# ecom_assistant/data/ — needed for deployment
 *.faiss
-*.json
 
 # Training outputs
 UniMIND/experiments/generate_result/
